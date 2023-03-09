@@ -1,0 +1,15 @@
+Clients are allowed to transfer any funds from any account to another account.
+Not secure.
+Applying Digital Signatures, only user with appropriate private keys can create
+a signauture that allow them to move funds from one account to another.
+Server can verify the signatures to move funds from one to another.
+1. Incorporate Public key cryptography so transer can be completed with valid 
+signatures.
+2. The person sending transaction should verify that they own the private key to the 
+address that is sending funds.
+
+Single server on Backend handling transfers that is centralized. Don't worry about
+distributed consesus for the project.
+Using Elliptical Curve Digital Signatures - server only allows transfer that has 
+been signed for by the person who owns associated address.
+
